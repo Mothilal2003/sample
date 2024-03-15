@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Modifiers</title>
+    <link rel="stylesheet" href="../contentStyle.css">
+  </head>
+  <body>
+    <h1>Access Modifiers</h1>
+    <p>
+      Properties and methods can have access modifiers which control where they
+      can be accessed.
+    </p>
+    <p>
+      public - the property or method can be accessed from everywhere. This is
+      default protected - the property or method can be accessed within the
+      class and by classes derived from that class private - the property or
+      method can ONLY be accessed within the class
+    </p>
+    <h2>The public access modifier</h2>
+    <p>
+      When you place the public keyword in front of a property or a method, the
+      property or method becomes public. It means that you can access the
+      property and method from both inside and outside of the class.
+    </p>
+    <p>The following example illustrates the public access modifier:</p>
+    <div class="image">
+        <img src="../img/accessmodi.png" alt="public modifier image" class="img-small">
+    </div>
+    <h2>The private access modifier</h2>
+    <p>
+      To prevent access to properties and methods from outside of the class, you
+      use the private access modifier.
+    </p>
+    <p>The following example illustrates the private access modifier:</p>
+    <div class="image">
+        <img src="/img/accessmodi1.png" alt="" class="img-medium">
+    </div>
+    <h2>Why do you need private property?</h2>
+    <p>
+      It may be faster to use the public access modifier for properties instead
+      of using a private property with the public getter/setter. However, by
+      using the private property, you can prevent direct access to the property
+      from the outside of the class. In addition, the getter/setter methods
+      ensure that the only way to access the property is through these methods.
+      And the getter/setter methods can provide custom logic to manipulate the
+      property value.
+    </p>
+    <h2>The protected access modifier</h2>
+    <p>
+      The protected keyword is an access modifier. It marks a property or method
+      as protected. Protected properties and methods can only be used by the
+      class in which the property or method was defined and any classes that
+      derive from it. Any other code cannot use them.
+    </p>
+    <p>The following example illustrates the protected access modifier:</p>
+    <div class="image">
+        <img src="/img/accessmodi2.png" alt="" class="img-medium">
+    </div>
+  </body>
+</html>
